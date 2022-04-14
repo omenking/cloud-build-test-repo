@@ -2,4 +2,4 @@ steps:
 - name: gcr.io/qwiklabs-gcp-04-9ae9b5b9b810/jekyll-build:latest
 - name: gcr.io/cloud-builders/gcloud
   entrypoint: gsutil
-  args: ["-m", "rsync", "-r", "-c", "-d", "/workspace/_site", "qwiklabs-gcp-04-9ae9b5b9b810-website"]
+  args: ["-m", "rsync", "-r", "-c", "-d", "/workspace/_site", "gs://qwiklabs-gcp-04-9ae9b5b9b810-website"]
